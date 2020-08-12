@@ -11,11 +11,21 @@
 
   $body = $response->getBody();
 
-  $resultado2 = json_decode($body);
+  $result = json_decode($body);
 
     echo "<br><br><hr>RESULTADO DA API DO TESTE <br><br>";
 
-    foreach ($resultado2->data as $dados) {
-        echo "url :" . $dados->embed_url . "<br>";
+    foreach ($result->data as $dados) {
+        echo "title :" . $dados->url . "<br>";
+        echo "url :" . $dados->url . "<br>";
+        echo "slug :" . $dados->slug . "<br><hr>";
+        echo "bitly_gif_url :" . $dados->bitly_gif_url . "<br><hr>";
+        echo "bitly_gif_url :" . $dados->bitly_url . "<br><hr>";
+        echo "embed_url :" . $dados->embed_url . "<br><hr>";
+        echo "source :" . $dados->source . "<br><hr>";
+
+        //var_dump($dados);
+
+
       }
  ?>
