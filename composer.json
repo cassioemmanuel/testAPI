@@ -1,0 +1,16 @@
+{
+    "name": "cassio/htdocs",
+    "description": "desenvolvimento",
+    "authors": [
+        {
+            "name": "cassio",
+            "email": "cassio.emmanuel@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.0",
+        "guzzlehttp/promises": "^1.3",
+        "guzzlehttp/psr7": "^1.6",
+        "phpunit/phpunit": "^9.3"
+    }
+}
